@@ -1,0 +1,15 @@
+https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+alias l='ls -aF'
+
+export TERM=xterm-256color
+
+PS1="[\d \t \u@\h:\w ] $ "
+
+export EDITOR=/usr/bin/vim
+
+export GIT_EDITOR=vim
+
+manvim() { vim -c "Man$1" -c 'silent! only'; }
+
+
