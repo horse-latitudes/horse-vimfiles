@@ -11,6 +11,7 @@
 :set showmode
 set laststatus=2
 :set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 :set hidden
 let loaded_matchparen = 1
 :map q :q<CR>
