@@ -52,8 +52,10 @@ Bundle 'majutsushi/tagbar'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
 
+map <F2> :NERDTreeToggle<CR>
 
-let g:nerdtree_tabs_open_on_console_startup = 1
+
+"let g:nerdtree_tabs_open_on_console_startup = 1
 
 let NERDTreeShowHidden=1
 
@@ -102,19 +104,8 @@ nmap <leader>gV :Gitv! --all<CR>
 vmap <leader>gV :Gitv! --all<CR>
 cabbrev gitv Gitv
 
-nnoremap <silent> <F9> :TagbarToggle<CR>
+"nnoremap <silent> <F9> :TagbarToggle<CR>
 
-let g:fuf_modesDisable = []
-let g:fuf_mrufile_maxItem = 400
-let g:fuf_mrucmd_maxItem = 400
-nnoremap <silent> s<C-k> :FufFile<CR>
-nnoremap <silent> s<C-d> :FufDir<CR>
-nnoremap <silent> sm :FufMruCmd<CR>
-nnoremap <silent> sq :FufQuickfix<CR>
-nnoremap <silent> sh :FufHelp<CR>
-nnoremap <silent> sr :FufRenewCache<CR>
-nnoremap <silent> sn :FufMruFile<CR>
-nnoremap <silent> sN :FufMruFileInCwd<CR>
 
 
 
