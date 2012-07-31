@@ -17,12 +17,14 @@ let loaded_matchparen = 1
 :map q :q<CR>
 :set ignorecase
 :set smartcase
-
+:version 7.3.315
 let mapleader = ","
 
 inoremap jj <ESC>
 
 nmap <silent> ,ev :e $MYVIMRC<CR>
+
+nmap <silent> ,x :w<CR>:!chmod 755 %<CR>:e<CR>
 
 nmap <leader>w :w<CR>
 
@@ -32,7 +34,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'rstacruz/sparkup' , {'rtp' : 'vim/'}
 Bundle 'L9'
-"Bundle 'FuzzyFinder'
+Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
@@ -41,7 +43,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'msanders/snipmate.vim'
-Bundle 'chrismetcalf/vim-yankring'
+Bundle 'fmoralesc/vim-pad'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-markdown'
 Bundle 'jiangmiao/auto-pairs'
@@ -51,11 +53,9 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'majutsushi/tagbar'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/dbext.vim'
 
-map <F2> :NERDTreeToggle<CR>
-
-
-"let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_open_on_console_startup = 1
 
 let NERDTreeShowHidden=1
 
@@ -104,8 +104,13 @@ nmap <leader>gV :Gitv! --all<CR>
 vmap <leader>gV :Gitv! --all<CR>
 cabbrev gitv Gitv
 
-"nnoremap <silent> <F9> :TagbarToggle<CR>
+nnoremap <silent> <F9> :TagbarToggle<CR>
 
+let g:syntastic_auto_jump=1
+
+let g:pad_dir = "~/notes"
+
+let g:pad_backend_search = `ack`
 
 
 
