@@ -97,8 +97,6 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc} set ft=
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
 
-call pathogen#infect('~/.vim/bundle')
-call pathogen#helptags()
 
 
 

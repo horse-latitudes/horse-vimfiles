@@ -12,4 +12,5 @@ export GIT_EDITOR=vim
 
 manvim() { vim -c "Man $1" -c 'silent! only'; }
 
+export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
