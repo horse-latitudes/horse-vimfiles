@@ -61,7 +61,7 @@ Bundle 'cwood/vim-django'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/taglist.vim'
-
+Bundle 'c9s/bufexplorer'
 
 
 
@@ -97,9 +97,6 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc} set ft=
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
 
-
-
-
 let g:syntastic_auto_jump=1
 
 :set splitright
@@ -111,12 +108,19 @@ let g:pad_search_backend = "ack"
 " bring up menu for tab completion with expansion. Set to =full for just menu
 set wildmode=list:longest,list:full
 
-
 :set splitbelow
 
-
-
 nnoremap <silent> <F8> :TlistToggle<CR>
+
+let Tlist_Exit_OnlyWindow = 1
+
+let Tlist_Use_Right_Window = 1
+
+
+
+
+
+
 
 
 
