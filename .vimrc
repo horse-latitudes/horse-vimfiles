@@ -56,12 +56,12 @@ Bundle 'majutsushi/tagbar'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/dbext.vim'
-Bundle 'fmoralesc/vim-pad'
+"Bundle 'fmoralesc/vim-pad'
 Bundle 'cwood/vim-django'
 Bundle 'jmcantrell/vim-virtualenv'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+"Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/taglist.vim'
-"Bundle 'c9s/bufexplorer'
+Bundle 'c9s/bufexplorer'
 Bundle 'vim-scripts/SudoEdit.vim'
 
 
@@ -103,7 +103,7 @@ let g:syntastic_auto_jump=1
 
 :set splitright
 
-let g:pad_dir = "~/notes/"
+"let g:pad_dir = "~/notes/"
 
 let g:pad_search_backend = "ack"
 
