@@ -45,7 +45,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'msanders/snipmate.vim'
-Bundle 'vim-scripts/YankRing.vim'
+"Bundle 'vim-scripts/YankRing.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-markdown'
 Bundle 'jiangmiao/auto-pairs'
@@ -61,8 +61,8 @@ Bundle 'cwood/vim-django'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'c9s/bufexplorer'
-
+"Bundle 'c9s/bufexplorer'
+Bundle 'vim-scripts/SudoEdit.vim'
 
 
 
@@ -93,9 +93,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 source $VIMRUNTIME/ftplugin/man.vim
 
-au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc} set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc,*.textile} set ft=ruby
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
+au BufRead,BufNewFile {*.log,*.profile,*.cfg} set ft=syslog
+
 
 let g:syntastic_auto_jump=1
 
@@ -116,14 +118,17 @@ let Tlist_Exit_OnlyWindow = 1
 
 let Tlist_Use_Right_Window = 1
 
+nmap <silent> <leader>\ :nohlsearch<CR>
 
 
+nmap <leader>gv :Gitv --all<cr>
+nmap <leader>gV :Gitv! --all<cr>
 
+cabbrev git Git
 
+let g:yankring_enabled = 0
 
-
-
-
+let g:virtualenv_directory = '/home/user/Projects'
 
 
 
