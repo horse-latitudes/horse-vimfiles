@@ -16,6 +16,9 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 alias g?='git status'
 
-alias ll='ls -alshGF'
+alias ll='ls -alshF'
 
+Mac .gvimrc (see attendant file)
+
+set gfn=Ubuntu\ Mono:h16
 
