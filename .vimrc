@@ -61,8 +61,11 @@ Bundle 'cwood/vim-django'
 Bundle 'jmcantrell/vim-virtualenv'
 "Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'c9s/bufexplorer'
+"Bundle 'c9s/bufexplorer'
 Bundle 'vim-scripts/SudoEdit.vim'
+Bundle 'vim-scripts/Pydiction'
+Bundle 'vim-scripts/Python-mode-klen'
+Bundle 'klen/rope-vim'
 
 
 
@@ -103,7 +106,7 @@ let g:syntastic_auto_jump=1
 
 :set splitright
 
-"let g:pad_dir = "~/notes/"
+let g:pad_dir = "~/notes/"
 
 let g:pad_search_backend = "ack"
 
@@ -129,6 +132,11 @@ cabbrev git Git
 let g:yankring_enabled = 0
 
 let g:virtualenv_directory = '/home/user/Projects'
+
+let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
+
+
+
 
 
 
