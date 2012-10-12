@@ -18,4 +18,11 @@ alias g?='git status'
 
 alias ll='ls -alshGF'
 
+Debian
+    Package "ack-grep"
+    To install ack-grep as "ack" instead of "ack-grep", use this command:
+    sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
+
+alias up='uptime'
+
 
