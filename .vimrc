@@ -66,7 +66,7 @@ Bundle 'vim-scripts/SudoEdit.vim'
 Bundle 'vim-scripts/Pydiction'
 Bundle 'vim-scripts/Python-mode-klen'
 Bundle 'klen/rope-vim'
-
+Bundle 'rodjek/vim-puppet'
 
 
 map <F2> :NERDTreeToggle<CR>
@@ -99,7 +99,7 @@ source $VIMRUNTIME/ftplugin/man.vim
 au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc,*.textile} set ft=ruby
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
-au BufRead,BufNewFile {*.log,*.profile,*.cfg} set ft=syslog
+au BufRead,BufNewFile {*.log,*.profile,*.cfg,*.stats} set ft=syslog
 
 
 let g:syntastic_auto_jump=1
@@ -135,7 +135,9 @@ let g:virtualenv_directory = '/home/user/Projects'
 
 let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
 
+set backup
 
+set backupdir=~/.backup
 
 
 
