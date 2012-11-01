@@ -1,0 +1,44 @@
+:set ts=2
+:syntax on
+:set ai
+:set nocompatible
+:set vb
+:set hlsearch
+:set binary noeol
+:set backspace=indent,eol,start
+:filetype plugin indent on
+:set number
+:set showmode
+set laststatus=2
+:set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+:set hidden
+let loaded_matchparen = 1
+:map q :q<CR>
+:set ignorecase
+:set smartcase
+:version 7.3.429
+let mapleader = ","
+inoremap jj <ESC>
+compiler ruby
+nmap <silent> ,ev :e $MYVIMRC<CR>
+
+nmap <leader>w :w<CR>
+
+nmap <silent> ,x :w<cr>:!chmod 755 %<cr>:e<cr>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+source $VIMRUNTIME/ftplugin/man.vim
+
+nmap <silent> <leader>\ :nohlsearch<CR>
+
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\  exe "normal g`\""
+
+
+
