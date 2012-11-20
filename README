@@ -21,7 +21,7 @@ alias ll='ls -alshF'
 
 alias up='uptime'
 
-
+alias ip='lynx --dump http://ipecho.net/plain'
 
 
 Debian

@@ -1,4 +1,4 @@
-:set ts=2
+:set ts=4
 :syntax on
 :set ai
 :set nocompatible
