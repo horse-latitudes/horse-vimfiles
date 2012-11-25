@@ -146,8 +146,11 @@ nnoremap ? q?
 "let g:hybrid_use_Xresources = 1 
 colorscheme hybrid 
 
+nnoremap <leader>eb :e ~/.bashrc<cr>
 
-
-
+"Yank content in OS's clipboard
+vnoremap <leader>yo "*y
+"Paste content from OS's clipboard
+nnoremap <leader>po "*p
 
 

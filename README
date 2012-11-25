@@ -23,6 +23,9 @@ alias up='uptime'
 
 alias ip='lynx --dump http://ipecho.net/plain'
 
+alias mine="sudo chown -R $(whoami):$(whoami)"
+
+
 
 Debian
     Package "ack-grep"
