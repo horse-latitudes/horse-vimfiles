@@ -23,6 +23,8 @@ inoremap jj <ESC>
 compiler ruby
 nmap <silent> ,ev :e $MYVIMRC<CR>
 
+nnoremap ; :
+
 nmap <leader>w :w<CR>
 
 nmap <silent> ,x :w<cr>:!chmod 755 %<cr>:e<cr>
@@ -138,6 +140,13 @@ let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
 set backup
 
 set backupdir=~/.backup
+
+nnoremap ? q?
+
+"let g:hybrid_use_Xresources = 1 
+colorscheme hybrid 
+
+
 
 
 
