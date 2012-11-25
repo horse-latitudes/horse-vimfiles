@@ -1,8 +1,9 @@
-colorscheme molokai
+colorscheme hybrid
 
 syntax on
 
 set guifont=Monospace\ 011
 
-"set guifont=Ubuntu\ 016
-"set lines=999 columns=999
+set lines=53 columns=138
+
+
