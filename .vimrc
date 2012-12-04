@@ -36,7 +36,7 @@ nnoremap <leader>a :Ack
 :set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
-Bundle 'rstacruz/sparkup' , {'rtp' : 'vim/'}
+"Bundle 'rstacruz/sparkup' , {'rtp' : 'vim/'}
 Bundle 'L9'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -46,28 +46,28 @@ Bundle 'tpope/vim-repeat'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'msanders/snipmate.vim'
+"Bundle 'msanders/snipmate.vim'
 "Bundle 'vim-scripts/YankRing.vim'
-Bundle 'godlygeek/tabular'
+"Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-markdown'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'gregsexton/gitv'
-Bundle 'vim-ruby/vim-ruby'
+"Bundle 'vim-ruby/vim-ruby'
 Bundle 'majutsushi/tagbar'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/dbext.vim'
 "Bundle 'fmoralesc/vim-pad'
-Bundle 'cwood/vim-django'
-Bundle 'jmcantrell/vim-virtualenv'
+"Bundle 'cwood/vim-django'
+"Bundle 'jmcantrell/vim-virtualenv'
 "Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/taglist.vim'
 "Bundle 'c9s/bufexplorer'
-Bundle 'vim-scripts/SudoEdit.vim'
-Bundle 'vim-scripts/Pydiction'
-Bundle 'vim-scripts/Python-mode-klen'
-Bundle 'klen/rope-vim'
+"Bundle 'vim-scripts/SudoEdit.vim'
+"Bundle 'vim-scripts/Pydiction'
+"Bundle 'vim-scripts/Python-mode-klen'
+"Bundle 'klen/rope-vim'
 Bundle 'rodjek/vim-puppet'
 
 
@@ -92,7 +92,7 @@ map <C-l> <C-w>l
 
 syntax on
 
-colorscheme molokai
+"colorscheme molokai
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -101,7 +101,7 @@ source $VIMRUNTIME/ftplugin/man.vim
 au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc,*.textile} set ft=ruby
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
-au BufRead,BufNewFile {*.log,*.profile,*.cfg,*.stats} set ft=syslog
+au BufRead,BufNewFile {*.log,*.log.1,*.profile,*.cfg,*.stats} set ft=syslog
 
 
 let g:syntastic_auto_jump=1
@@ -143,7 +143,7 @@ set backupdir=~/.backup
 
 nnoremap ? q?
 
-"let g:hybrid_use_Xresources = 1 
+"let g:hybrid_use_Xresources = 1
 colorscheme hybrid 
 
 nnoremap <leader>eb :e ~/.bashrc<cr>
@@ -152,5 +152,7 @@ nnoremap <leader>eb :e ~/.bashrc<cr>
 vnoremap <leader>yo "*y
 "Paste content from OS's clipboard
 nnoremap <leader>po "*p
+
+nnoremap <leader>eg :e ~/.gvimrc<cr>
 
 
