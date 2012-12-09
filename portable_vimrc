@@ -1,4 +1,4 @@
-:set ts=2
+:set ts=4
 :syntax on
 :set ai
 :set nocompatible
@@ -20,7 +20,6 @@ let loaded_matchparen = 1
 :version 7.3.429
 let mapleader = ","
 inoremap jj <ESC>
-compiler ruby
 nmap <silent> ,ev :e $MYVIMRC<CR>
 
 nmap <leader>w :w<CR>
@@ -40,5 +39,7 @@ autocmd BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
 	\  exe "normal g`\""
 
+nnoremap ; :
 
+nnoremap ? q?
 
