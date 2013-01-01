@@ -69,9 +69,12 @@ Bundle 'vim-scripts/Pydiction'
 Bundle 'vim-scripts/Python-mode-klen'
 Bundle 'klen/rope-vim'
 Bundle 'rodjek/vim-puppet'
+Bundle 'vim-scripts/TwitVim'
 
 
-map <F2> :NERDTreeToggle<CR>
+
+
+:noremap gm :NERDTreeToggle<CR>
 
 set ruler
 
@@ -154,5 +157,15 @@ vnoremap <leader>yo "*y
 nnoremap <leader>po "*p
 
 nnoremap <leader>eg :e ~/.gvimrc<cr>
+
+set title
+
+let twitvim_enable_python = 1
+
+let twitvim_browser_cmd = '/usr/bin/google-chrome'
+
+
+
+
 
 
