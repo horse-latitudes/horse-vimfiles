@@ -70,7 +70,7 @@ Bundle 'vim-scripts/Python-mode-klen'
 Bundle 'klen/rope-vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/TwitVim'
-
+Bundle 'vim-scripts/vim-maximizer'
 
 
 
@@ -136,7 +136,7 @@ cabbrev git Git
 
 let g:yankring_enabled = 0
 
-let g:virtualenv_directory = '/home/user/Projects'
+let g:virtualenv_directory = '/home/user/ENV'
 
 let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
 
@@ -163,6 +163,18 @@ set title
 let twitvim_enable_python = 1
 
 let twitvim_browser_cmd = '/usr/bin/google-chrome'
+
+set incsearch
+
+let g:is_posix = 1
+
+nnoremap <leader>rt :tabnew<cr>
+
+au BufWinEnter *.txt if &ft == 'help' | wincmd H | endif
+
+nnoremap mt :MaximizerToggle<CR>
+"vnoremap <silent><F3> :MaximizerToggle<CR>gv
+"inoremap <silent><F3> <C-o>:MaximizerToggle<CR>
 
 
 
