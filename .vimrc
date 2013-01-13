@@ -1,4 +1,6 @@
 :set ts=4
+:set shiftwidth=4
+:set expandtab
 :syntax on
 :set ai
 :set nocompatible
@@ -71,6 +73,9 @@ Bundle 'klen/rope-vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/TwitVim'
 Bundle 'vim-scripts/vim-maximizer'
+Bundle 'cometsong/ferm.vim'
+
+
 
 
 
@@ -176,8 +181,8 @@ nnoremap mt :MaximizerToggle<CR>
 "vnoremap <silent><F3> :MaximizerToggle<CR>gv
 "inoremap <silent><F3> <C-o>:MaximizerToggle<CR>
 
+nnoremap Y y$
 
-
-
+inoremap <S-Tab> <C-V><Tab>
 
 
