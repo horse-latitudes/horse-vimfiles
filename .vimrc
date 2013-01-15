@@ -74,8 +74,8 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/TwitVim'
 Bundle 'vim-scripts/vim-maximizer'
 Bundle 'cometsong/ferm.vim'
-
-
+Bundle 'vim-scripts/projectroot'
+Bundle 'sjl/gundo.vim'
 
 
 
@@ -184,5 +184,16 @@ nnoremap mt :MaximizerToggle<CR>
 nnoremap Y y$
 
 inoremap <S-Tab> <C-V><Tab>
+
+nnoremap <leader>dp :ProjectRootCD<cr>
+
+nnoremap <silent> <Leader>dt :ProjectRootExe NERDTreeFind<cr>
+
+nnoremap gu :GundoToggle<CR>
+
+let g:gundo_close_on_revert = 1
+
+
+
 
 
