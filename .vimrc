@@ -41,7 +41,7 @@ Bundle 'gmarik/vundle'
 Bundle 'rstacruz/sparkup' , {'rtp' : 'vim/'}
 Bundle 'L9'
 Bundle 'mileszs/ack.vim'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'phildobbin/vim-powerline'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'

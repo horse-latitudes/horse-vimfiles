@@ -1,4 +1,6 @@
 :set ts=4
+":set shiftwidth=4
+":set expandtab
 :syntax on
 :set ai
 :set nocompatible
@@ -42,4 +44,12 @@ autocmd BufReadPost *
 nnoremap ; :
 
 nnoremap ? q?
+
+nnoremap Y y$
+
+"inoremap <S-Tab> <C-V><Tab>
+
+set title
+
+nnoremap <leader>rt :tabnew<cr>
 
