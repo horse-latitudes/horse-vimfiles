@@ -76,6 +76,10 @@ Bundle 'vim-scripts/vim-maximizer'
 Bundle 'cometsong/ferm.vim'
 Bundle 'vim-scripts/projectroot'
 Bundle 'sjl/gundo.vim'
+Bundle 'mihaifm/bufstop'
+
+
+
 
 
 
@@ -192,6 +196,14 @@ nnoremap <silent> <Leader>dt :ProjectRootExe NERDTreeFind<cr>
 nnoremap gu :GundoToggle<CR>
 
 let g:gundo_close_on_revert = 1
+
+map <leader>b :Bufstop<CR>          
+map <leader>a :BufstopModeFast<CR> 
+map <C-tab>   :BufstopBack<CR>
+map <S-tab>   :BufstopForward<CR>
+let g:BufstopAutoSpeedToggle = 1 
+
+
 
 
 
