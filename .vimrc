@@ -77,7 +77,7 @@ Bundle 'cometsong/ferm.vim'
 Bundle 'vim-scripts/projectroot'
 Bundle 'sjl/gundo.vim'
 Bundle 'mihaifm/bufstop'
-
+Bundle 'altercation/vim-colors-solarized'
 
 
 
