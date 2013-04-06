@@ -1,4 +1,9 @@
-colorscheme hybrid
+"colorscheme hybrid
+
+syntax enable
+set background=dark
+colorscheme solarized
+
 
 syntax on
 
