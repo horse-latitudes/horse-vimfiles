@@ -53,3 +53,8 @@ set title
 
 nnoremap <leader>rt :tabnew<cr>
 
+nmap <silent> ,eb :e /root/.bashrc<CR>
+
+
+
+
