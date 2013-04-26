@@ -78,7 +78,7 @@ Bundle 'vim-scripts/projectroot'
 Bundle 'sjl/gundo.vim'
 Bundle 'mihaifm/bufstop'
 Bundle 'altercation/vim-colors-solarized'
-
+Bundle 'mhinz/vim-startify'
 
 
 
@@ -104,7 +104,7 @@ map <C-l> <C-w>l
 
 syntax on
 
-"colorscheme molokai
+colorscheme molokai
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -156,7 +156,7 @@ set backupdir=~/.backup
 nnoremap ? q?
 
 "let g:hybrid_use_Xresources = 1
-colorscheme hybrid 
+"colorscheme hybrid 
 
 nnoremap <leader>eb :e ~/.bashrc<cr>
 
@@ -203,9 +203,17 @@ map <C-tab>   :BufstopBack<CR>
 map <S-tab>   :BufstopForward<CR>
 let g:BufstopAutoSpeedToggle = 1 
 
+let g:startify_session_dir = '~/.vim/session'
+let g:startify_show_sessions = 1
+let g:startify_show_files = 1
+let g:startify_show_files_number = 10
+let g:startify_bookmarks = [ '~/.vimrc' ]
+
+nnoremap <leader>sf :Startify<cr>
 
 
-
-
-
+let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:odysseus9=whatever:dbname=mysql:extra=-t'
+    let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:odysseus9=whatever:dbname=mysql:extra=--batch --raw --silent'
+    let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=whatever:driver=mysql:conn_parms=database=mysql;host=localhost'
+    let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=whatever:dsnname=mysql'
 
