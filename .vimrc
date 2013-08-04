@@ -19,7 +19,7 @@ let loaded_matchparen = 1
 :map q :q<CR>
 :set ignorecase
 :set smartcase
-:version 7.3.429
+:version 7.4b.BETA
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -79,7 +79,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'mihaifm/bufstop'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mhinz/vim-startify'
-
+Bundle 'moll/vim-node'
 
 
 
@@ -212,8 +212,18 @@ let g:startify_bookmarks = [ '~/.vimrc' ]
 nnoremap <leader>sf :Startify<cr>
 
 
-let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:**********:dbname=mysql:extra=-t'
-let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:***********:dbname=mysql:extra=--batch --raw --silent'
-let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=:***********:driver=mysql:conn_parms=database=mysql;host=localhost'
-let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:*************:dsnname=mysql'
+let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:odysseus9:dbname=mysql:extra=-t'
+let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:odysseus9:dbname=mysql:extra=--batch --raw --silent'
+let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=:odysseus9:driver=mysql:conn_parms=database=mysql;host=localhost'
+let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:odysseus9:dsnname=mysql'
+
+
+
+
+
+
+
+
+
+
 
