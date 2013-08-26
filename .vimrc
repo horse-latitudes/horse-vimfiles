@@ -80,7 +80,7 @@ Bundle 'mihaifm/bufstop'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mhinz/vim-startify'
 Bundle 'moll/vim-node'
-
+Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
 
 
 :noremap gm :NERDTreeToggle<CR>
@@ -217,11 +217,13 @@ let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:odysseus
 let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=:odysseus9:driver=mysql:conn_parms=database=mysql;host=localhost'
 let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:odysseus9:dsnname=mysql'
 
+"colorscheme Darkside
 
+"colorscheme Grunge
 
+"colorscheme Poyeyo_Blue
 
-
-
+colorscheme TronLegacy
 
 
 
