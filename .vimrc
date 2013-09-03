@@ -81,6 +81,11 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'mhinz/vim-startify'
 Bundle 'moll/vim-node'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
+Bundle 'biskark/vim-ultimate-colorscheme-utility'
+
+
+
+
 
 
 :noremap gm :NERDTreeToggle<CR>
