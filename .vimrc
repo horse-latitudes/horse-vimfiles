@@ -83,7 +83,10 @@ Bundle 'moll/vim-node'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
 Bundle 'biskark/vim-ultimate-colorscheme-utility'
 Bundle 'vim-scripts/nerdtree-execute'
-
+Bundle 'justinmk/vim-sneak'
+Bundle 'junegunn/goyo.vim'
+Bundle 'mikewest/vimroom'
+Bundle 'jayflo/vim-skip'
 
 
 
@@ -230,6 +233,7 @@ let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:****
 
 colorscheme TronLegacy
 
+":set spell spelllang=en_gb
 
 
 
