@@ -80,8 +80,8 @@ Bundle 'mihaifm/bufstop'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mhinz/vim-startify'
 Bundle 'moll/vim-node'
-Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
-Bundle 'biskark/vim-ultimate-colorscheme-utility'
+"Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
+"Bundle 'biskark/vim-ultimate-colorscheme-utility'
 Bundle 'vim-scripts/nerdtree-execute'
 Bundle 'justinmk/vim-sneak'
 Bundle 'junegunn/goyo.vim'
@@ -231,7 +231,7 @@ let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:****
 
 "colorscheme Poyeyo_Blue
 
-colorscheme TronLegacy
+"colorscheme TronLegacy
 
 ":set spell spelllang=en_gb
 
