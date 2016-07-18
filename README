@@ -25,7 +25,6 @@ alias ip='lynx --dump http://ipecho.net/plain'
 
 alias mine="sudo chown -R $(whoami):$(whoami)"
 
-alias history='hi'
 
 
 
