@@ -92,10 +92,12 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'junegunn/goyo.vim'
 Plugin 'mikewest/vimroom'
 Plugin 'jayflo/vim-skip'
+"Plugin 'vim-scripts/ToggleNERDTree-width'
+
 
 call vundle#end()
 filetype plugin indent on
-:noremap gm: NERDTreeToggle<CR>
+map <leader>gm :NERDTreeToggle<CR>
 
 set ruler
 
@@ -229,7 +231,7 @@ let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:********
 let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=:*******:driver=mysql:conn_parms=database=mysql;host=localhost'
 let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:********:dsnname=mysql'
 
-"colorscheme Darkside
+map <leader>r :NERDTree<CR>
 
 "colorscheme Grunge
 
@@ -241,4 +243,8 @@ let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:****
 
 
 
+nnoremap <esc><esc> :silent! nohls<cr>
 
+
+
+map <Leader>vr :VimroomToggle<CR>
