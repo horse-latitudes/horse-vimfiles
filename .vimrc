@@ -1,9 +1,11 @@
+set nocompatible
+filetype off
 :set ts=4
 :set shiftwidth=4
 :set expandtab
 :syntax on
 :set ai
-:set nocompatible
+":set nocompatible
 :set vb
 :set hlsearch
 :set binary noeol
@@ -33,65 +35,67 @@ nmap <silent> ,x :w<cr>:!chmod 755 %<cr>:e<cr>
 
 nnoremap <leader>a :Ack
 
+"set nocompatible
+"filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-:filetype off
-:set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'rstacruz/sparkup' , {'rtp' : 'vim/'}
-Bundle 'L9'
-Bundle 'mileszs/ack.vim'
-Bundle 'phildobbin/vim-powerline'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'msanders/snipmate.vim'
-"Bundle 'vim-scripts/YankRing.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'tpope/vim-markdown'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'majutsushi/tagbar'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/dbext.vim'
-"Bundle 'fmoralesc/vim-pad'
-Bundle 'cwood/vim-django'
-Bundle 'jmcantrell/vim-virtualenv'
-"Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-Bundle 'vim-scripts/taglist.vim'
-"Bundle 'c9s/bufexplorer'
-Bundle 'vim-scripts/SudoEdit.vim'
-Bundle 'vim-scripts/Pydiction'
-Bundle 'vim-scripts/Python-mode-klen'
-Bundle 'klen/rope-vim'
-Bundle 'rodjek/vim-puppet'
-Bundle 'vim-scripts/TwitVim'
-Bundle 'vim-scripts/vim-maximizer'
-Bundle 'cometsong/ferm.vim'
-Bundle 'vim-scripts/projectroot'
-Bundle 'sjl/gundo.vim'
-Bundle 'mihaifm/bufstop'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'mhinz/vim-startify'
-Bundle 'moll/vim-node'
-"Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
-"Bundle 'biskark/vim-ultimate-colorscheme-utility'
-Bundle 'vim-scripts/nerdtree-execute'
-Bundle 'justinmk/vim-sneak'
-Bundle 'junegunn/goyo.vim'
-Bundle 'mikewest/vimroom'
-Bundle 'jayflo/vim-skip'
+Plugin 'VundleVim/Vundle.vim'
 
+"Plugin 'gmarik/vundle'
+Plugin 'rstacruz/sparkup' , {'rtp' : 'vim/'}
+Plugin 'L9'
+Plugin 'mileszs/ack.vim'
+Plugin 'phildobbin/vim-powerline'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'msanders/snipmate.vim'
+"Plugin 'vim-scripts/YankRing.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-markdown'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'majutsushi/tagbar'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/dbext.vim'
+"Plugin 'fmoralesc/vim-pad'
+"Plugin 'cwood/vim-django'
+Plugin 'jmcantrell/vim-virtualenv'
+"Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'vim-scripts/taglist.vim'
+"Plugin 'c9s/bufexplorer'
+Plugin 'vim-scripts/SudoEdit.vim'
+Plugin 'vim-scripts/Pydiction'
+Plugin 'vim-scripts/Python-mode-klen'
+Plugin 'klen/rope-vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'vim-scripts/TwitVim'
+Plugin 'vim-scripts/vim-maximizer'
+Plugin 'cometsong/ferm.vim'
+Plugin 'vim-scripts/projectroot'
+Plugin 'sjl/gundo.vim'
+Plugin 'mihaifm/bufstop'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'mhinz/vim-startify'
+Plugin 'moll/vim-node'
+"Plugin "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
+"Plugin 'biskark/vim-ultimate-colorscheme-utility'
+Plugin 'vim-scripts/nerdtree-execute'
+Plugin 'justinmk/vim-sneak'
+Plugin 'junegunn/goyo.vim'
+Plugin 'mikewest/vimroom'
+Plugin 'jayflo/vim-skip'
 
-
-
-:noremap gm :NERDTreeToggle<CR>
+call vundle#end()
+filetype plugin indent on
+:noremap gm: NERDTreeToggle<CR>
 
 set ruler
 
