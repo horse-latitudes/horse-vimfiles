@@ -169,14 +169,13 @@ alias odrive='python ~/.odrive-agent/bin/odrive.py -h'
 
 export PATH="$HOME/.odrive-agent/bin:$PATH"
 
+. /home/phil/bin/h.sh
+
 
 
 
 eval $(thefuck --alias)
 
-export PATH="/home/phil/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # Sets the Mail Environment Variable
 MAIL=/var/spool/mail/phil && export MAIL
