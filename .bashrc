@@ -136,19 +136,6 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 
 alias ip='lynx --dump http://ipecho.net/plain'
-PS1="[\d \t \u@\h:\w ] $ "
-
-export TERM=xterm-256color
-
-alias l='ls -aF'
-
-manvim() { vim -c "Man $1" -c 'silent! only'; }
-
-alias g?='git status'
-
-alias up='uptime'
-
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 
 
