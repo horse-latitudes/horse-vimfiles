@@ -1,4 +1,5 @@
-https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+just a bunch of dotfiles & Vim directories...
+
 
 alias l='ls -aF'
 
@@ -23,20 +24,8 @@ alias up='uptime'
 
 alias ip='lynx --dump http://ipecho.net/plain'
 
-alias mine="sudo chown -R $(whoami):$(whoami)"
 
 
 
 
-Debian
-    Package "ack-grep"
-    To install ack-grep as "ack" instead of "ack-grep", use this command:
-    sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
-=======
-
-OpenSuse n.b. vim-data
-
-Mac .gvimrc (see attendant file)
-
-set gfn=Ubuntu\ Mono:h16
 

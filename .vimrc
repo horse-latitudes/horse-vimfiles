@@ -92,7 +92,7 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'junegunn/goyo.vim'
 Plugin 'mikewest/vimroom'
 Plugin 'jayflo/vim-skip'
-"Plugin 'vim-scripts/ToggleNERDTree-width'
+Plugin 'vim-scripts/Toggle-NERDTree-width'
 
 
 call vundle#end()
@@ -241,6 +241,9 @@ map <leader>r :NERDTree<CR>
 
 ":set spell spelllang=en_gb
 
+let g:ack_mappings = {
+              \  'v':  '<C-W><CR><C-W>L<C-W>p<C-W>J<C-W>p',
+              \ 'gv': '<C-W><CR><C-W>L<C-W>p<C-W>J' }
 
 
 nnoremap <esc><esc> :silent! nohls<cr>
