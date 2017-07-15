@@ -52,7 +52,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'msanders/snipmate.vim'
 "Plugin 'vim-scripts/YankRing.vim'
 Plugin 'godlygeek/tabular'
@@ -76,7 +76,7 @@ Plugin 'vim-scripts/Pydiction'
 Plugin 'vim-scripts/Python-mode-klen'
 Plugin 'klen/rope-vim'
 Plugin 'rodjek/vim-puppet'
-Plugin 'vim-scripts/TwitVim'
+Plugin 'twitvim/twitvim'
 Plugin 'vim-scripts/vim-maximizer'
 Plugin 'cometsong/ferm.vim'
 Plugin 'vim-scripts/projectroot'
@@ -93,6 +93,9 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'mikewest/vimroom'
 Plugin 'jayflo/vim-skip'
 Plugin 'vim-scripts/Toggle-NERDTree-width'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+
 
 
 call vundle#end()
@@ -183,9 +186,13 @@ nnoremap <leader>eg :e ~/.gvimrc<cr>
 
 set title
 
-let twitvim_enable_python = 1
+"let twitvim_enable_perl = 1
 
-let twitvim_browser_cmd = '/usr/bin/google-chrome'
+
+let twitvim_browser_cmd = '/opt/google/chrome/google-chrome'
+
+"let twitvim_token_file = "/home/phil/.twitvim.token"
+
 
 set incsearch
 
@@ -233,13 +240,8 @@ let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:****
 
 map <leader>r :NERDTree<CR>
 
-"colorscheme Grunge
 
-"colorscheme Poyeyo_Blue
-
-"colorscheme TronLegacy
-
-":set spell spelllang=en_gb
+"set spell spelllang=en_gb
 
 let g:ack_mappings = {
               \  'v':  '<C-W><CR><C-W>L<C-W>p<C-W>J<C-W>p',
@@ -251,3 +253,6 @@ nnoremap <esc><esc> :silent! nohls<cr>
 
 
 map <Leader>vr :VimroomToggle<CR>
+
+set undodir=~/.vim/undo-dir
+set undofile
