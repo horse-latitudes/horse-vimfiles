@@ -21,6 +21,13 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/go/libexec/bin
 
+test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$PATH"
+test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+test -r ~/.bash_profile && echo 'export PATH="$(brew --prefix)/bin:$PATH"' >>~/.bash_profile
+echo 'export PATH="$(brew --prefix)/bin:$PATH"' >>~/.profile
+
+
+
 export PATH=~/.npm-global/bin:$PATH
 
 
@@ -28,3 +35,51 @@ export PATH=~/.npm-global/bin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"

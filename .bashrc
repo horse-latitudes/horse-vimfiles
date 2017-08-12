@@ -115,57 +115,48 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-[ -r /home/phil/.byobu/prompt ] && . /home/phil/.byobu/prompt   #byobu-prompt#
-
-
-
-
-PS1="[\d \t \u@\h:\w ] $ "
-
-export TERM=xterm-256color
 
 alias l='ls -aF'
 
+export TERM=xterm-256color
+
+PS1="[\d \t \u@\h:\w ] $ "
+
+export EDITOR=/usr/bin/vim.gtk-py2
+
+export GIT_EDITOR=vim
+
 manvim() { vim -c "Man $1" -c 'silent! only'; }
 
-alias g?='git status'
 
-alias up='uptime'
+alias vim='/usr/bin/vim.gtk-py2'
 
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
+alias g?='git status'
+
+alias ll='ls -alshF'
+
+
+alias up='uptime'
 
 alias ip='lynx --dump http://ipecho.net/plain'
 
-
-
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-
-
-
-export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-
-
-
-export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-
-export PATH="$HOME/.node_modules_global/bin:$PATH"
+stty -ixon
 
 
 alias odrive='python ~/.odrive-agent/bin/odrive.py -h'
 
 export PATH="$HOME/.odrive-agent/bin:$PATH"
 
-. /home/phil/bin/h.sh
+export PERL5LIB=$HOME/perl5/lib/perl5
 
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
-
+PATH="/home/linuxbrew/.linuxbrew/Cellar:$PATH"
 
 eval $(thefuck --alias)
 
-
-# Sets the Mail Environment Variable
-MAIL=/var/spool/mail/phil && export MAIL
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

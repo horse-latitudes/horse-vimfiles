@@ -52,7 +52,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'msanders/snipmate.vim'
 "Plugin 'vim-scripts/YankRing.vim'
 Plugin 'godlygeek/tabular'
@@ -63,7 +63,7 @@ Plugin 'gregsexton/gitv'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'majutsushi/tagbar'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/dbext.vim'
 "Plugin 'fmoralesc/vim-pad'
 "Plugin 'cwood/vim-django'
@@ -78,7 +78,7 @@ Plugin 'klen/rope-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'twitvim/twitvim'
 Plugin 'vim-scripts/vim-maximizer'
-Plugin 'cometsong/ferm.vim'
+"Plugin 'cometsong/ferm.vim'
 Plugin 'vim-scripts/projectroot'
 Plugin 'sjl/gundo.vim'
 Plugin 'mihaifm/bufstop'
@@ -95,7 +95,7 @@ Plugin 'jayflo/vim-skip'
 Plugin 'vim-scripts/Toggle-NERDTree-width'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
-
+Plugin 'ctrlpvim/ctrlp.vim'
 
 
 call vundle#end()
@@ -256,3 +256,14 @@ map <Leader>vr :VimroomToggle<CR>
 
 set undodir=~/.vim/undo-dir
 set undofile
+
+"CtrlP stuff
+let g:ctrlp_open_new_file = 't'  "<c-t>
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_tabpage_position = 'ac'
+
+let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
+                          \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
+
+
+colorscheme monokai
