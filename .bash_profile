@@ -9,7 +9,6 @@ export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 
 export XDG_DATA_DIRS="/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS"
 
-export PATH="$(brew --prefix)/bin:$PATH"
 
 
 
@@ -19,50 +18,9 @@ export PATH="$(brew --prefix)/bin:$PATH"
 
 
 
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
-export PATH="$(brew --prefix)/bin:$PATH"
+
+
+
+
+
+

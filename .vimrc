@@ -42,61 +42,33 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'gmarik/vundle'
-Plugin 'rstacruz/sparkup' , {'rtp' : 'vim/'}
-Plugin 'L9'
 Plugin 'mileszs/ack.vim'
 Plugin 'phildobbin/vim-powerline'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'msanders/snipmate.vim'
-"Plugin 'vim-scripts/YankRing.vim'
 Plugin 'godlygeek/tabular'
-Plugin 'tpope/vim-markdown'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'gregsexton/gitv'
-Plugin 'vim-ruby/vim-ruby'
 Plugin 'majutsushi/tagbar'
 Plugin 'jistr/vim-nerdtree-tabs'
-"Plugin 'kien/ctrlp.vim'
-Plugin 'vim-scripts/dbext.vim'
-"Plugin 'fmoralesc/vim-pad'
-"Plugin 'cwood/vim-django'
-Plugin 'jmcantrell/vim-virtualenv'
-"Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'vim-scripts/taglist.vim'
-"Plugin 'c9s/bufexplorer'
-Plugin 'vim-scripts/SudoEdit.vim'
-Plugin 'vim-scripts/Pydiction'
-Plugin 'vim-scripts/Python-mode-klen'
-Plugin 'klen/rope-vim'
-Plugin 'rodjek/vim-puppet'
 Plugin 'twitvim/twitvim'
-Plugin 'vim-scripts/vim-maximizer'
-"Plugin 'cometsong/ferm.vim'
 Plugin 'vim-scripts/projectroot'
 Plugin 'sjl/gundo.vim'
-Plugin 'mihaifm/bufstop'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'mhinz/vim-startify'
-Plugin 'moll/vim-node'
-"Plugin "daylerees/colour-schemes", { "rtp": "vim-themes/"  }
-"Plugin 'biskark/vim-ultimate-colorscheme-utility'
 Plugin 'vim-scripts/nerdtree-execute'
-Plugin 'justinmk/vim-sneak'
 Plugin 'junegunn/goyo.vim'
 Plugin 'mikewest/vimroom'
-Plugin 'jayflo/vim-skip'
 Plugin 'vim-scripts/Toggle-NERDTree-width'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-
+Plugin 'tpope/vim-eunuch'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'mhinz/vim-grepper'
+Plugin 'chrisbra/NrrwRgn'
 
 call vundle#end()
 filetype plugin indent on
@@ -146,7 +118,7 @@ set wildmode=list:longest,list:full
 
 :set splitbelow
 
-nnoremap <silent> <F8> :TlistToggle<CR>
+"nnoremap <silent> <F8> :TlistToggle<CR>
 
 let Tlist_Exit_OnlyWindow = 1
 
@@ -160,7 +132,7 @@ nmap <leader>gV :Gitv! --all<cr>
 
 cabbrev git Git
 
-let g:yankring_enabled = 0
+let g:yankring_enabled = 1
 
 let g:virtualenv_directory = '/home/user/ENV'
 
@@ -206,7 +178,7 @@ nnoremap mt :MaximizerToggle<CR>
 "vnoremap <silent><F3> :MaximizerToggle<CR>gv
 "inoremap <silent><F3> <C-o>:MaximizerToggle<CR>
 
-nnoremap Y y$
+map Y y$
 
 inoremap <S-Tab> <C-V><Tab>
 
@@ -233,10 +205,6 @@ let g:startify_bookmarks = [ '~/.vimrc' ]
 nnoremap <leader>sf :Startify<cr>
 
 
-let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:*********:dbname=mysql:extra=-t'
-let g:dbext_default_profile_mysql_local = 'type=MYSQL:user=root:passwd=:*********:dbname=mysql:extra=--batch --raw --silent'
-let g:dbext_default_profile_mysql_local_DBI = 'type=DBI:user=root:passwd=:*******:driver=mysql:conn_parms=database=mysql;host=localhost'
-let g:dbext_default_profile_mysql_local_ODBC = 'type=ODBC:user=root:passwd=:********:dsnname=mysql'
 
 map <leader>r :NERDTree<CR>
 
@@ -266,4 +234,39 @@ let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
                           \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
 
 
+nnoremap <leader>yr :YRShow<CR>
+
+
 colorscheme monokai
+
+set modelines=5
+
+nnoremap <leader>g :Grepper<cr>
+
+if !exists("g:bracketed_paste_tmux_wrap")
+  let g:bracketed_paste_tmux_wrap = 1
+endif
+
+let &t_ti .= "\<Esc>[?2004h"
+let &t_te .= "\<Esc>[?2004l"
+
+function! XTermPasteBegin(ret)
+  set pastetoggle=<f29>
+  set paste
+  return a:ret
+endfunction
+
+execute "set <f28>=\<Esc>[200~"
+execute "set <f29>=\<Esc>[201~"
+map <expr> <f28> XTermPasteBegin("i")
+imap <expr> <f28> XTermPasteBegin("")
+vmap <expr> <f28> XTermPasteBegin("c")
+cmap <f28> <nop>
+cmap <f29> <nop>
+
+
+
+
+
+
+

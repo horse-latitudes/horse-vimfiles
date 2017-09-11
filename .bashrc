@@ -145,7 +145,7 @@ alias ip='lynx --dump http://ipecho.net/plain'
 stty -ixon
 
 
-alias odrive='python ~/.odrive-agent/bin/odrive.py -h'
+alias odrive='python ~/.odrive-agent/bin/odrive.py'
 
 export PATH="$HOME/.odrive-agent/bin:$PATH"
 
@@ -157,6 +157,25 @@ PATH="/home/linuxbrew/.linuxbrew/Cellar:$PATH"
 
 eval $(thefuck --alias)
 
+alias t='python ~/dev/t/t.py --task-dir ~/tasks --list tasks'
+
+source /home/phil/dev/git-hub/.rc
+
+alias gpom='git push origin master'
+
+alias _="sudo"
+
+alias vbrc="vim ~/.bashrc"
+
+alias vbpf="vim ~/.bash_profile"
+
+alias h='history'
+
+alias aptpurge='sudo apt remove --purge'
+
+alias vcsh='~/bin/usr/bin/vcsh'
+
+eval $($HOME/.toast/armed/bin/toast env)
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

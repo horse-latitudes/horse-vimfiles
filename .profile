@@ -23,8 +23,8 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt/go/libexec/bin
 
 test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$PATH"
 test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-test -r ~/.bash_profile && echo 'export PATH="$(brew --prefix)/bin:$PATH"' >>~/.bash_profile
-export PATH="$(brew --prefix)/bin:$PATH"
+#test -r ~/.bash_profile && echo 'export PATH="$(brew --prefix)/bin:$PATH"'
+#export PATH="$(brew --prefix)/bin:$PATH"
 
 
 
