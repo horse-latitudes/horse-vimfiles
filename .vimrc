@@ -1,27 +1,27 @@
 set nocompatible
 filetype off
-:set ts=4
-:set shiftwidth=4
-:set expandtab
-:syntax on
-:set ai
+set ts=4
+set shiftwidth=4
+set expandtab
+syntax on
+set ai
 ":set nocompatible
-:set vb
-:set hlsearch
-:set binary noeol
-:set backspace=indent,eol,start
-:filetype plugin indent on
-:set number
-:set showmode
+set vb
+set hlsearch
+set binary noeol
+set backspace=indent,eol,start
+filetype plugin indent on
+set number
+set showmode
 set laststatus=2
-:set noerrorbells visualbell t_vb=
+set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
-:set hidden
+set hidden
 let loaded_matchparen = 1
-:map q :q<CR>
-:set ignorecase
-:set smartcase
-:version 7.4
+map q :q<CR>
+set ignorecase
+set smartcase
+version 8 Included patches: 1-1272
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -107,9 +107,9 @@ au BufRead,BufNewFile {*.log,*.log.1,*.profile,*.cfg,*.stats,*.txt} set ft=syslo
 
 let g:syntastic_auto_jump=1
 
-:set splitright
+set splitright
 
-let g:pad_dir = "~/notes/"
+"let g:pad_dir = "~/notes/"
 
 let g:pad_search_backend = "ack"
 
@@ -134,9 +134,9 @@ cabbrev git Git
 
 let g:yankring_enabled = 1
 
-let g:virtualenv_directory = '/home/user/ENV'
+"let g:virtualenv_directory = '/home/user/ENV'
 
-let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
+"let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
 
 set backup
 
@@ -264,7 +264,8 @@ vmap <expr> <f28> XTermPasteBegin("c")
 cmap <f28> <nop>
 cmap <f29> <nop>
 
-
+"Stop dropping comments on newlines.
+au FileType * set fo-=r fo-=o
 
 
 

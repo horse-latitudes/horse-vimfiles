@@ -177,5 +177,9 @@ alias vcsh='~/bin/usr/bin/vcsh'
 
 eval $($HOME/.toast/armed/bin/toast env)
 
+alias show='aptitude show'
+
+
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
