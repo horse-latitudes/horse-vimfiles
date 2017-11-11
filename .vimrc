@@ -161,7 +161,7 @@ set title
 "let twitvim_enable_perl = 1
 
 
-let twitvim_browser_cmd = '/opt/google/chrome/google-chrome'
+let twitvim_browser_cmd = '/home/phil/dev/firefox-bin'
 
 "let twitvim_token_file = "/home/phil/.twitvim.token"
 
