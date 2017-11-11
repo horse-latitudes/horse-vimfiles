@@ -7,7 +7,8 @@ export TERM=xterm-256color
 
 PS1="[\d \t \u@\h:\w ] $ "
 
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim.gtk-py2
+
 
 export GIT_EDITOR=vim
 
