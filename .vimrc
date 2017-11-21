@@ -21,7 +21,7 @@ let loaded_matchparen = 1
 map q :q<CR>
 set ignorecase
 set smartcase
-version 8 Included patches: 1-1272
+version 8 Included patches: 1-1322
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -43,7 +43,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'mileszs/ack.vim'
-Plugin 'phildobbin/vim-powerline'
+"Plugin 'phildobbin/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -66,9 +66,13 @@ Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-eunuch'
-Plugin 'vim-scripts/YankRing.vim'
+"Plugin 'vim-scripts/YankRing.vim'
 Plugin 'mhinz/vim-grepper'
 Plugin 'chrisbra/NrrwRgn'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+
 
 call vundle#end()
 filetype plugin indent on
@@ -109,7 +113,6 @@ let g:syntastic_auto_jump=1
 
 set splitright
 
-"let g:pad_dir = "~/notes/"
 
 let g:pad_search_backend = "ack"
 
@@ -118,7 +121,6 @@ set wildmode=list:longest,list:full
 
 :set splitbelow
 
-"nnoremap <silent> <F8> :TlistToggle<CR>
 
 let Tlist_Exit_OnlyWindow = 1
 
@@ -134,9 +136,6 @@ cabbrev git Git
 
 let g:yankring_enabled = 1
 
-"let g:virtualenv_directory = '/home/user/ENV'
-
-"let g:pydiction_location = '/home/user/.vim/bundle/Pydiction/complete-dict'
 
 set backup
 
@@ -144,8 +143,6 @@ set backupdir=~/.backup
 
 nnoremap ? q?
 
-"let g:hybrid_use_Xresources = 1
-"colorscheme hybrid 
 
 nnoremap <leader>eb :e ~/.bashrc<cr>
 
@@ -270,4 +267,24 @@ au FileType * set fo-=r fo-=o
 
 
 
+set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
 
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
+
+let g:airline#extensions#tmuxline#enabled = 0
+
+
+let g:airline_powerline_fonts = 1
+
+:let g:airline_theme='dark'
+
+
+if !empty(&t_ut)
+  " see http://snk.tuxfamily.org/log/vim-256color-bce.html
+  let &t_ut=''
+endif

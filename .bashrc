@@ -169,9 +169,10 @@ alias vbrc="vim ~/.bashrc"
 
 alias vbpf="vim ~/.bash_profile"
 
+alias virc="vim ~/.vimrc"
+
 alias h='history'
 
-alias aptpurge='sudo apt remove --purge'
 
 alias vcsh='~/bin/usr/bin/vcsh'
 
