@@ -21,7 +21,7 @@ let loaded_matchparen = 1
 map q :q<CR>
 set ignorecase
 set smartcase
-version 8 Included patches: 1-1322
+version 8 Included patches: 1-1349
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -283,8 +283,11 @@ let g:airline_powerline_fonts = 1
 
 :let g:airline_theme='dark'
 
-
+"many thanks to chrisbra
 if !empty(&t_ut)
   " see http://snk.tuxfamily.org/log/vim-256color-bce.html
   let &t_ut=''
 endif
+
+
+
