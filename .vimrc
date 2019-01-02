@@ -5,7 +5,6 @@ set shiftwidth=4
 set expandtab
 syntax on
 set ai
-":set nocompatible
 set vb
 set hlsearch
 set binary noeol
@@ -21,7 +20,7 @@ let loaded_matchparen = 1
 map q :q<CR>
 set ignorecase
 set smartcase
-version 8 Included patches: 1-1349
+version 8.1 Included patches: 1-477
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -46,7 +45,7 @@ Plugin 'mileszs/ack.vim'
 "Plugin 'phildobbin/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
@@ -71,7 +70,7 @@ Plugin 'mhinz/vim-grepper'
 Plugin 'chrisbra/NrrwRgn'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
+Plugin 'lifepillar/vim-cheat40'
 
 
 call vundle#end()
