@@ -122,14 +122,14 @@ export TERM=xterm-256color
 
 PS1="[\d \t \u@\h:\w ] $ "
 
-export EDITOR=/usr/bin/vim.gtk-py2
+export EDITOR=/usr/bin/vim
 
 export GIT_EDITOR=vim
 
 manvim() { vim -c "Man $1" -c 'silent! only'; }
 
 
-alias vim='/usr/bin/vim.gtk-py2'
+alias vim='/usr/bin/vim'
 
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
@@ -181,6 +181,9 @@ eval $($HOME/.toast/armed/bin/toast env)
 alias show='aptitude show'
 
 alias pol='apt policy'
+
+. ~/git-completion.bash
+
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

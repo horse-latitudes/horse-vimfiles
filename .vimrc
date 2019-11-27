@@ -20,7 +20,7 @@ let loaded_matchparen = 1
 map q :q<CR>
 set ignorecase
 set smartcase
-version 8.1 Included patches: 1-477
+version 8.1 Included patches: 1-2292
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
