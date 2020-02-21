@@ -20,7 +20,7 @@ let loaded_matchparen = 1
 map q :q<CR>
 set ignorecase
 set smartcase
-version 8.1 Included patches: 1-2292
+version 8.2 Included patches: 1-251
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -54,7 +54,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'twitvim/twitvim'
 Plugin 'vim-scripts/projectroot'
-Plugin 'sjl/gundo.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'mhinz/vim-startify'
 Plugin 'vim-scripts/nerdtree-execute'
@@ -71,6 +70,9 @@ Plugin 'chrisbra/NrrwRgn'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lifepillar/vim-cheat40'
+Plugin 'yegappan/mru'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'simnalamburt/vim-mundo'
 
 
 call vundle#end()
@@ -105,8 +107,8 @@ source $VIMRUNTIME/ftplugin/man.vim
 au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc,*.textile,*.pp} set ft=ruby
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
-au BufRead,BufNewFile {*.log,*.log.1,*.profile,*.cfg,*.stats,*.txt} set ft=syslog
-
+au BufRead,BufNewFile {*.log,*.log.1,*.cfg,*.stats,*.txt} set ft=syslog
+au BufRead,BufNewFile {.profile} set ft=sh
 
 let g:syntastic_auto_jump=1
 
@@ -182,9 +184,9 @@ nnoremap <leader>dp :ProjectRootCD<cr>
 
 nnoremap <silent> <Leader>dt :ProjectRootExe NERDTreeFind<cr>
 
-nnoremap gu :GundoToggle<CR>
+nnoremap gu :MundoToggle<CR>
 
-let g:gundo_close_on_revert = 1
+let g:mundo_close_on_revert = 1
 
 map <leader>b :Bufstop<CR>          
 map <leader>a :BufstopModeFast<CR> 
@@ -218,8 +220,8 @@ nnoremap <esc><esc> :silent! nohls<cr>
 
 map <Leader>vr :VimroomToggle<CR>
 
-set undodir=~/.vim/undo-dir
-set undofile
+"set undodir=~/.vim/undo-dir
+"set undofile
 
 "CtrlP stuff
 let g:ctrlp_open_new_file = 't'  "<c-t>
@@ -287,6 +289,16 @@ if !empty(&t_ut)
   " see http://snk.tuxfamily.org/log/vim-256color-bce.html
   let &t_ut=''
 endif
+
+" Let's save undo info!
+if !isdirectory($HOME."/.vim")
+	    call mkdir($HOME."/.vim", "", 0770)
+	endif
+	if !isdirectory($HOME."/.vim/undo-dir")
+		    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+		endif
+		set undodir=~/.vim/undo-dir
+		set undofile
 
 
 

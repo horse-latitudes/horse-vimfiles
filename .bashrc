@@ -151,15 +151,15 @@ export PATH="$HOME/.odrive-agent/bin:$PATH"
 
 export PERL5LIB=$HOME/perl5/lib/perl5
 
-PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+#PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
-PATH="/home/linuxbrew/.linuxbrew/Cellar:$PATH"
+#PATH="/home/linuxbrew/.linuxbrew/Cellar:$PATH"
 
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 
 alias t='python ~/dev/t/t.py --task-dir ~/tasks --list tasks'
 
-source /home/phil/dev/git-hub/.rc
+#source /home/phil/dev/git-hub/.rc
 
 alias gpom='git push origin master'
 
@@ -174,16 +174,16 @@ alias virc="vim ~/.vimrc"
 alias h='history'
 
 
-alias vcsh='~/bin/usr/bin/vcsh'
+#alias vcsh='~/bin/usr/bin/vcsh'
 
-eval $($HOME/.toast/armed/bin/toast env)
+#eval $($HOME/.toast/armed/bin/toast env)
 
 alias show='aptitude show'
 
 alias pol='apt policy'
 
-. ~/git-completion.bash
+#. ~/git-completion.bash
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH="$PATH:$HOME/.rvm/bin"
