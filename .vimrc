@@ -20,7 +20,7 @@ let loaded_matchparen = 1
 map q :q<CR>
 set ignorecase
 set smartcase
-version 8.2 Included patches: 1-251
+version 8.2 Included patches: 1-397
 let mapleader = ","
 inoremap jj <ESC>
 compiler ruby
@@ -73,6 +73,9 @@ Plugin 'lifepillar/vim-cheat40'
 Plugin 'yegappan/mru'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'simnalamburt/vim-mundo'
+Plugin 'rust-lang/rust.vim'
+Plugin 'skywind3000/vim-quickui'
+
 
 
 call vundle#end()
@@ -108,7 +111,7 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.rdoc,*.textil
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown} set ft=markdown
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
 au BufRead,BufNewFile {*.log,*.log.1,*.cfg,*.stats,*.txt} set ft=syslog
-au BufRead,BufNewFile {.profile} set ft=sh
+au BufRead,BufNewFile {.profile,*.txt} set ft=sh
 
 let g:syntastic_auto_jump=1
 
@@ -135,7 +138,6 @@ nmap <leader>gV :Gitv! --all<cr>
 
 cabbrev git Git
 
-let g:yankring_enabled = 1
 
 
 set backup
@@ -300,5 +302,9 @@ if !isdirectory($HOME."/.vim")
 		set undodir=~/.vim/undo-dir
 		set undofile
 
+let g:rustc_makeprg_no_percent = 1
 
+
+":set list
+":set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 

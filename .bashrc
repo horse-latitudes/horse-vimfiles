@@ -131,7 +131,9 @@ manvim() { vim -c "Man $1" -c 'silent! only'; }
 
 alias vim='/usr/bin/vim'
 
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+#export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+
+PS1='"\033]0;${USER}@${HOSTNAME}: ${PWD}\007 [\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 alias g?='git status'
 
@@ -143,6 +145,8 @@ alias up='uptime'
 alias ip='lynx --dump http://ipecho.net/plain'
 
 stty -ixon
+
+export PATH="$HOME/dev/PathPicker/debian/usr/bin:$PATH"
 
 
 alias odrive='python ~/.odrive-agent/bin/odrive.py'
@@ -159,7 +163,7 @@ export PERL5LIB=$HOME/perl5/lib/perl5
 
 alias t='python ~/dev/t/t.py --task-dir ~/tasks --list tasks'
 
-#source /home/phil/dev/git-hub/.rc
+source /home/phil/git-hub/.rc
 
 alias gpom='git push origin master'
 
@@ -171,7 +175,7 @@ alias vbpf="vim ~/.bash_profile"
 
 alias virc="vim ~/.vimrc"
 
-alias h='history'
+#alias h='history'
 
 
 #alias vcsh='~/bin/usr/bin/vcsh'
@@ -182,8 +186,30 @@ alias show='aptitude show'
 
 alias pol='apt policy'
 
-#. ~/git-completion.bash
+source ~/git-completion.bash
+
+export WORKON_HOME=$HOME/.virtualenvs
+
+source /home/phil/.local/bin/virtualenvwrapper.sh
+
+export WORKON_HOME=$HOME/.virtualenvs
+
+eval "$(direnv hook bash)"
+
+alias py3='/usr/local/bin/python3.8'
+
+alias pop='/usr/local/bin/pip3.8'
+
+source ~/.git-prompt.sh
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
+
+PATH="/home/phil/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/phil/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/phil/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/phil/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/phil/perl5"; export PERL_MM_OPT;
+
+source <(kubectl completion bash)
